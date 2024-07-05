@@ -1,3 +1,7 @@
 export enum AppRoute {
-    Students = '/',
-  }
+  Students = '/',
+}
+
+export enum ApiRoute {
+  Persons = 'persons',
+}
