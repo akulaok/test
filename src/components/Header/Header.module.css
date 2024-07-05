@@ -1,0 +1,33 @@
+.wrapper {
+    display: flex;
+    height: 85.29px;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    padding-left: 126px;
+    gap: 45px;
+    padding-top: 34px;
+    padding-bottom: 31px;
+    box-shadow: 0px 40px 50px rgba(244, 244, 244, 1);
+    box-sizing: border-box;
+}
+
+.icon {
+    height: 42px;
+    width: 42px;
+    background-image: url('./img/icon.svg');
+    background-size: cover;
+}
+
+.text {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 44px;
+}
+
+.blue_text {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(73, 194, 232, 1);
+}

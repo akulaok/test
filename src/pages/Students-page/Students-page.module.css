@@ -1,0 +1,19 @@
+.page {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.main {
+    height: calc(100% - 85.29px);
+    padding-left: 130px;
+    padding-right: 130px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50.32px;
+    margin-top: 74px;
+    margin-bottom: 47px
+}
