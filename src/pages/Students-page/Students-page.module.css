@@ -17,3 +17,7 @@ h1 {
     margin-top: 74px;
     margin-bottom: 47px
 }
+
+.filters{
+    display: flex;
+}
