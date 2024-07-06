@@ -10,7 +10,7 @@ export default class Loader {
     async get() {
         try {
             const response = await axios.get(this.baseUrl, { });
-            return response.data;
+            return response.data.students;
         } catch (error) {
             throw new Error('Failed to fetch data');
         }

@@ -9,8 +9,8 @@
     gap: 45px;
     padding-top: 34px;
     padding-bottom: 31px;
-    box-shadow: 0px 40px 50px rgba(244, 244, 244, 1);
     box-sizing: border-box;
+    box-shadow: 0px 7px 64px 0px rgba(0, 0, 0, 0.07);
 }
 
 .icon {

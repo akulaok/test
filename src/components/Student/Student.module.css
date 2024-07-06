@@ -1,0 +1,14 @@
+.row{
+  width: 100%;
+  box-sizing: border-box;
+  
+}
+
+.row_item{
+font-size: 15px;
+font-weight: 500;
+line-height: 20px;
+text-align: left;
+padding: 26px 20px 26px 17px;
+box-sizing: border-box;
+}

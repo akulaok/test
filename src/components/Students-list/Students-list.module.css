@@ -1,0 +1,12 @@
+.list{
+  width: 100%;
+  border-collapse: collapse;
+  box-sizing: border-box;
+}
+
+.list_body{
+  overflow: hidden;
+  box-shadow: 0px 7px 64px 0px rgba(0, 0, 0, 0.07);
+  border-radius: 6px; 
+  box-sizing: border-box;
+}

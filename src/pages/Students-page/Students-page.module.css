@@ -1,13 +1,14 @@
 .page {
     margin: 0;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .main {
-    height: calc(100% - 85.29px);
     padding-left: 130px;
     padding-right: 130px;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -15,9 +16,14 @@ h1 {
     font-weight: 700;
     line-height: 50.32px;
     margin-top: 74px;
-    margin-bottom: 47px
+    margin-bottom: 47px;
+    box-sizing: border-box;
 }
 
-.filters{
+.filters {
+    margin-bottom: 32px;
     display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    box-sizing: border-box;
 }

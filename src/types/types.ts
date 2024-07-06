@@ -1,4 +1,4 @@
-export type Student = {
+export type StudentType = {
     id: number,
     email: string,
     name: string,
@@ -11,4 +11,4 @@ export type Student = {
     avatar: string,
 }
 
-export type Students = Student[];
+export type StudentsType = StudentType[];

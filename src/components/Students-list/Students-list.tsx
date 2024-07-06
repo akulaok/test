@@ -1,39 +1,23 @@
-import { Students } from '../../types/types';
+import { StudentsType } from '../../types/types';
+import Student from '../Student/Student';
+import StudentsListHeader from '../Students-list-header/Studtnts-list-header';
 import styles from './Students-list.module.css'
 
 type StudentsListProps = {
-    students: Students,
+  students: StudentsType,
 }
 
-function StudentsList({students} : StudentsListProps): JSX.Element {
-    console.log(students);
-    return (
-        <table>
-            <thead>
-                <tr>
-                    <th>ФИО</th>
-                    <th>Специальность</th>
-                    <th>Группа</th>
-                    <th>Возраст</th>
-                    <th>Рейтинг</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-            {students.map((student) => (
-                    <tr key={student.id}>
-                        <td>{student.name}</td>
-                        <td>{student.specialty}</td>
-                        <td>{student.group}</td>
-                        
-                        <td>{student.rating}</td>
-                        <td>
-                            <img src={student.avatar} alt={student.name} className={styles.avatar} />
-                        </td>
-                    </tr>
-                ))}
-            </tbody>
-        </table>
-    );
+function StudentsList({ students }: StudentsListProps): JSX.Element {
+  console.log(students)
+  return (
+    <table className={styles.list}>
+      <StudentsListHeader></StudentsListHeader>
+      <tbody className={styles.list_body}>
+        {students.map((student) => (
+          <Student key={student.id} student={student} />
+        ))}
+      </tbody>
+    </table>
+  );
 };
 export default StudentsList;

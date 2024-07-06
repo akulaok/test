@@ -1,7 +1,7 @@
 import styles from './Studentas-searching.module.css'
 function StudentsSearching(): JSX.Element {
-    return (
-        <></>
-    );
+  return (
+    <>поиск</>
+  );
 }
 export default StudentsSearching;
