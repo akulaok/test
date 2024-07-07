@@ -1,14 +1,94 @@
-.row{
+.row {
   width: 100%;
   box-sizing: border-box;
-  
+
 }
 
-.row_item{
-font-size: 15px;
-font-weight: 500;
-line-height: 20px;
-text-align: left;
-padding: 26px 20px 26px 17px;
-box-sizing: border-box;
+.row_item {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  padding: 26px 20px 26px 0;
+  box-sizing: border-box;
+  max-width: 80px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  padding-left: 20px;
+}
+
+.avatar_wrapper {
+  -display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar_img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.name {
+  max-width: 300px;
+}
+
+.specialty {
+  max-width: 280px;
+}
+
+.ellipse {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.red{
+  background-color: var(--red-color);
+}
+
+.black{
+  background-color: var(--black-color);
+}
+
+.orange{
+  background-color: var(--orange-color);
+}
+
+.yellow{
+  background-color: var(--yellow-color);
+}
+
+.green{
+  background-color: var(--green-color);
+}
+
+.blue{
+  background-color: var( --blue-color);
+}
+
+.lgbt{
+  background-image: var(--lgbt-color);
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  background-position: center;
+}
+
+.delete_button {
+  width: 30px;
+  height: 30px;
+  background-image: url(../../general-style/img/delete-icon.svg);
+  border: none;
+  background-position: center;
+  background-size: 14px 14px;
+  background-repeat: no-repeat;
+  background-color: white;
+  box-shadow: 0px 0px 16.37px 0px var(--dropshadow-icon-color);
 }

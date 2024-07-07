@@ -1,0 +1,11 @@
+:root {
+  --black-color: rgba(0, 0, 0, 1);
+  --red-color: rgba(226, 91, 91, 1);
+  --orange-color: rgba(239, 166, 56, 1);
+  --yellow-color: rgba(247, 251, 83, 1);
+  --green-color: rgba(131, 200, 114, 1);
+  --blue-color: rgba(73, 194, 232, 1);
+  --lgbt-color: url('https://s3-alpha-sig.figma.com/img/fb11/a73c/689dba243f3170a3f111c963f6efac2f?Expires=1721001600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=A1Em~FTXiMmCrrhDd-DZgvX0eRnMIzSI-1fXjzu5hIM3pdlokFJgItGF6I2B79oif5iUnpfLMtTwRpnEh3T10vbIska-i3PXWyQHpa4eg8f5ueH0maDoaF3o-LDIJ7UStluqNGI8pDIlNEK9bmvo4rpDC~Q6JslcyVxaw~pXG-mGA-BFvonnc0BbwTNcZ6HJhDp2wIoe2tTISzV-hftbD9M1WUkezqavgKrS-DaBrv1W2BVET08fJ2D0RY~acTED84FEorGbFg6YEU1oKqTp6yWB3FfY4wckf88WODxs4QCAMmxfZXgFCa~787HGoTSr1LNtY~-gwjScWlo0xbLD5w__');
+  --dropshadow-color: rgba(0, 0, 0, 0.07);
+  --dropshadow-icon-color: rgba(0, 0, 0, 0.07);
+}

@@ -10,7 +10,7 @@
     padding-top: 34px;
     padding-bottom: 31px;
     box-sizing: border-box;
-    box-shadow: 0px 7px 64px 0px rgba(0, 0, 0, 0.07);
+    box-shadow: 0px 7px 64px 0px var(--dropshadow-color);
 }
 
 .icon {
@@ -29,5 +29,5 @@
 .blue_text {
     font-size: 20px;
     font-weight: 500;
-    color: rgba(73, 194, 232, 1);
+    color: var(--blue-color);
 }
