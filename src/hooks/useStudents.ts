@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import StudentsApi from '../api/api';
+import { StudentsType } from '../types/types';
 
-const useStudents = () => {
-  const [students, setStudents] = useState([]);
+const useStudents = () : [StudentsType, boolean]=> {
+  const [students, setStudents] = useState<StudentsType>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -21,7 +22,7 @@ const useStudents = () => {
     fetchStudents();
   }, []);
 
-  return { students, loading };
+  return [ students , loading ];
 };
 
 export default useStudents;
