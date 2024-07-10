@@ -13,4 +13,4 @@ export type StudentType = {
 
 export type StudentsType = StudentType[];
 
-export type FiltrationTypes = 'Имя А-Я' | 'Имя Я-А' | 'Сначала моложе' | 'Сначала старше' | 'Высокий рейтинг' | 'Низкий рейтинг';
+export type SortingTypes = 'Имя А-Я' | 'Имя Я-А' | 'Сначала моложе' | 'Сначала старше' | 'Высокий рейтинг' | 'Низкий рейтинг';

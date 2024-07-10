@@ -22,7 +22,7 @@
   justify-content: space-between;
 }
 
-.filter_type {
+.sort_type {
   font-size: 12px;
   font-weight: 500;
   line-height: 15.1px;
@@ -35,7 +35,7 @@
   height: 20px;
 }
 
-.filter_list {
+.sort_list {
   position: absolute;
   z-index: 1;
   width: 180px;
@@ -74,10 +74,10 @@
 .list__item_active,
 .list__item:hover,
 .list__item:focus {
-  background-color: var(--filter-item-color);
+  background-color: var(--sort-item-color);
 }
 
-.filter_icon {
+.sort_icon {
   background-image: url(./img/check_icon.svg);
   height: 8px;
   width: 10px;
