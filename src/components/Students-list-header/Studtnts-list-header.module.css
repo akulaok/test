@@ -11,3 +11,10 @@
   padding: 0 20px 12px 0;
   box-sizing: border-box;
 }
+
+
+@media (max-width: 376px)  {
+  .head{ 
+    display: none;
+  }
+}

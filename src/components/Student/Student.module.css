@@ -1,7 +1,6 @@
 .row {
   width: 100%;
   box-sizing: border-box;
-
 }
 
 .row_item {
@@ -49,31 +48,31 @@
   overflow: hidden;
 }
 
-.red{
+.red {
   background-color: var(--red-color);
 }
 
-.black{
+.black {
   background-color: var(--black-color);
 }
 
-.orange{
+.orange {
   background-color: var(--orange-color);
 }
 
-.yellow{
+.yellow {
   background-color: var(--yellow-color);
 }
 
-.green{
+.green {
   background-color: var(--green-color);
 }
 
-.blue{
-  background-color: var( --blue-color);
+.blue {
+  background-color: var(--blue-color);
 }
 
-.lgbt{
+.lgbt {
   background-image: var(--lgbt-color);
   width: 30px;
   height: 30px;
@@ -91,4 +90,116 @@
   background-repeat: no-repeat;
   background-color: white;
   box-shadow: 0px 0px 16.37px 0px var(--dropshadow-color);
+}
+
+
+.row_item_mobile {
+  display: none;
+}
+
+
+@media (max-width: 376px) {
+  .row {
+    margin-top: 10px;
+    box-shadow: 0px 7px 64px 0px var(--dropshadow-color);
+    height: 170px;
+    border-radius: 6px;
+  }
+
+  .row_item {
+    display: none;
+
+  }
+
+  .row_item_mobile {
+    display: block;
+    height: 170px;
+    border-radius: 6px;
+    box-sizing: border-box;
+  }
+
+  .avatar_wrapper {
+    -display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .avatar_img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+  }
+
+  .header {
+    padding: 16px 16px 14px 16px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05)
+  }
+
+  .header_wrapper {
+    display: flex;
+    gap: 21px;
+  }
+
+  .name {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  .header_information {
+    display: flex;
+    gap: 13px;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 3px;
+  }
+
+  .color_mobile {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .star {
+    background-image: url(./rating.svg);
+    width: 10px;
+    height: 10px;
+  }
+
+  .rating {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15.1px;
+    text-align: left;
+  }
+
+  .information {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15.1px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  .list {
+    margin: 0;
+    padding: 0;
+  }
+
+  .list_item {
+    margin-bottom: 5px;
+  }
+
+  .list_item::marker {
+    color: var(--blue-color);
+  }
 }

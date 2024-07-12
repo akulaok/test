@@ -1,9 +1,11 @@
+import { Specialty } from "../consts";
+
 export type StudentType = {
     id: number,
     email: string,
     name: string,
     sex: string,
-    specialty: string,
+    specialty: keyof typeof Specialty,
     group: string,
     color: string,
     rating: number,

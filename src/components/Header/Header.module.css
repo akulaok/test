@@ -24,10 +24,24 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 44px;
+    color: var(--black-color)
 }
 
 .blue_text {
     font-size: 20px;
     font-weight: 500;
     color: var(--blue-color);
+}
+
+@media (max-width: 376px) {
+    .wrapper {
+        padding-left: 29px;
+        padding-top: 21px;
+        padding-bottom: 22px;
+        gap: 26px;
+    }
+
+    .blue_text {
+        display: none;
+    }
 }

@@ -2,7 +2,7 @@ import styles from './Studtnts-list-header.module.css';
 
 function StudentsListHeader(): JSX.Element {
   return (
-    <thead>
+    <thead className={styles.head}>
       <tr>
         <th></th>
         <th className={styles.column}><span className={styles.column_name}>ФИО</span></th>
