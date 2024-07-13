@@ -13,8 +13,8 @@
 }
 
 
-@media (max-width: 376px)  {
-  .head{ 
+@media (max-width: 376px) {
+  .head {
     display: none;
   }
 }

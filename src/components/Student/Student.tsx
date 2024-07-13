@@ -1,7 +1,7 @@
 import { Specialty } from "../../consts";
 import { StudentType } from "../../types/types";
 import calculatePreciseAge from "../../utils/calculateAge";
-import StudentMobile from '../Student-mobile/Student-mobile'
+import StudentMobile from "../Student-mobile/Student-mobile";
 import styles from "./Student.module.css";
 type StudentProps = {
   student: StudentType;

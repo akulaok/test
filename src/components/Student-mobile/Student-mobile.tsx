@@ -1,6 +1,6 @@
 import { StudentType } from "../../types/types";
-import styles  from "../Student/Student.module.css";
-import calculatePreciseAge from '../../utils/calculateAge'
+import styles from "../Student/Student.module.css";
+import calculatePreciseAge from "../../utils/calculateAge";
 import ageFormatter from "../../utils/ageFormatter";
 import { Specialty } from "../../consts";
 
@@ -9,7 +9,7 @@ type StudentMobileProps = {
   onDelete: (id: number) => void;
 };
 
-function StudentMobile({student, onDelete}: StudentMobileProps): JSX.Element {
+function StudentMobile({ student, onDelete }: StudentMobileProps): JSX.Element {
   return (
     <td className={styles.row_item_mobile}>
       <div className={styles.header}>

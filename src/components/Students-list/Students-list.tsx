@@ -20,13 +20,19 @@ function StudentsList({
   return (
     <>
       <table className={styles.list}>
-        <StudentsListHeader></StudentsListHeader> 
+        <StudentsListHeader></StudentsListHeader>
         <tbody className={styles.list_body}>
           {sortStudents(students, sortingType).map((student: StudentType) => {
             if (
               student.name.toLowerCase().startsWith(currentQuery.toLowerCase())
             )
-              return <Student onDelete={onDelete} key={student.id} student={student} />;
+              return (
+                <Student
+                  onDelete={onDelete}
+                  key={student.id}
+                  student={student}
+                />
+              );
           })}
         </tbody>
       </table>
