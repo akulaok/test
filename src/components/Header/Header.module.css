@@ -21,6 +21,7 @@
 }
 
 .text {
+    font-family: 'Geometria-Medium';
     font-size: 20px;
     font-weight: 500;
     line-height: 44px;
@@ -28,6 +29,7 @@
 }
 
 .blue_text {
+    font-family: 'Geometria-Medium';
     font-size: 20px;
     font-weight: 500;
     color: var(--blue-color);

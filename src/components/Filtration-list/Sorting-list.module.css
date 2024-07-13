@@ -24,6 +24,7 @@
 }
 
 .sort_type {
+  font-family: 'Geometria-Medium';
   font-size: 12px;
   font-weight: 500;
   line-height: 15.1px;
@@ -54,6 +55,7 @@
 }
 
 .list__item {
+  font-family: 'Geometria-Medium';
   font-size: 12px;
   font-weight: 500;
   line-height: 15.1px;
