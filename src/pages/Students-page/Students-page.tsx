@@ -8,7 +8,7 @@ import useStudents from '../../hooks/useStudents';
 import styles from './Students-page.module.css'
 import { SortingTypes } from '../../types/types';
 function Students(): JSX.Element {
-  const [ students , loading ] = useStudents();
+  const [ students , loading, deleteStudent ] = useStudents();
   const[currentQuery, handleInputChange] = UseSearchStudents();
   const [sortingType, setSortingType] = useState<SortingTypes>('Имя А-Я');
 
@@ -27,7 +27,7 @@ function Students(): JSX.Element {
           <StudentsSearching handleInputChange={handleInputChange}></StudentsSearching>
           <SortingList sortingType={sortingType} onChangeSortingType={(type) => setSortingType(type as SortingTypes)}></SortingList>
         </section>
-        <StudentsList students={students} sortingType={sortingType} currentQuery={currentQuery}></StudentsList>
+        <StudentsList onDelete={deleteStudent} students={students} sortingType={sortingType} currentQuery={currentQuery}></StudentsList>
       </main>
       <footer className={styles.footer}></footer>
     </div>

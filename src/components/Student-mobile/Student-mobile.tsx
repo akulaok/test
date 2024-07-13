@@ -6,9 +6,10 @@ import { Specialty } from "../../consts";
 
 type StudentMobileProps = {
   student: StudentType;
+  onDelete: (id: number) => void;
 };
 
-function StudentMobile({student}: StudentMobileProps): JSX.Element {
+function StudentMobile({student, onDelete}: StudentMobileProps): JSX.Element {
   return (
     <td className={styles.row_item_mobile}>
       <div className={styles.header}>
@@ -31,6 +32,7 @@ function StudentMobile({student}: StudentMobileProps): JSX.Element {
         </div>
         <button
           className={[styles.ellipse, styles.delete_button].join(" ")}
+          onClick={() => onDelete(student.id)}
         ></button>
       </div>
       <div className={styles.information}>

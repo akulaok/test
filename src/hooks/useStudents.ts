@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import StudentsApi from '../api/api';
 import { StudentsType } from '../types/types';
 
-const useStudents = () : [StudentsType, boolean]=> {
+const useStudents = (): [StudentsType, boolean, (id: number) => void] => {
   const [students, setStudents] = useState<StudentsType>([]);
   const [loading, setLoading] = useState(true);
 
@@ -22,7 +22,11 @@ const useStudents = () : [StudentsType, boolean]=> {
     fetchStudents();
   }, []);
 
-  return [ students , loading ];
+  const deleteStudent = (id: number) => {
+    setStudents(students.filter(student => student.id !== id));
+  };
+
+  return [students, loading, deleteStudent];
 };
 
 export default useStudents;

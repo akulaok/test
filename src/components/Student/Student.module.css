@@ -89,7 +89,16 @@
   background-size: 14px 14px;
   background-repeat: no-repeat;
   background-color: white;
+}
+
+.delete_button:hover {
   box-shadow: 0px 0px 16.37px 0px var(--dropshadow-color);
+}
+
+.delete_button:active {
+  box-shadow: 0px 0px 16.37px 0px var(--dropshadow-color);
+  background-color: var(--dropshadow-color);
+
 }
 
 

@@ -8,12 +8,14 @@ type StudentsListProps = {
   students: StudentsType;
   currentQuery: string;
   sortingType: SortingTypes;
+  onDelete: (id: number) => void;
 };
 
 function StudentsList({
   students,
   currentQuery,
   sortingType,
+  onDelete,
 }: StudentsListProps): JSX.Element {
   return (
     <>
@@ -24,7 +26,7 @@ function StudentsList({
             if (
               student.name.toLowerCase().startsWith(currentQuery.toLowerCase())
             )
-              return <Student key={student.id} student={student} />;
+              return <Student onDelete={onDelete} key={student.id} student={student} />;
           })}
         </tbody>
       </table>

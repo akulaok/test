@@ -5,9 +5,10 @@ import StudentMobile from '../Student-mobile/Student-mobile'
 import styles from "./Student.module.css";
 type StudentProps = {
   student: StudentType;
+  onDelete: (id: number) => void;
 };
 
-function Student({ student }: StudentProps): JSX.Element {
+function Student({ student, onDelete }: StudentProps): JSX.Element {
   return (
     <tr className={styles.row} key={student.id}>
       <td className={[styles.row_item, styles.avatar].join(" ")}>
@@ -34,9 +35,10 @@ function Student({ student }: StudentProps): JSX.Element {
       <td className={styles.row_item}>
         <button
           className={[styles.ellipse, styles.delete_button].join(" ")}
+          onClick={() => onDelete(student.id)}
         ></button>
       </td>
-      <StudentMobile student={student}></StudentMobile>
+      <StudentMobile onDelete={onDelete} student={student}></StudentMobile>
     </tr>
   );
 }
