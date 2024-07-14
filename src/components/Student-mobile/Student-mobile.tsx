@@ -1,8 +1,8 @@
-import { StudentType } from "../../types/types";
-import styles from "../Student/Student.module.css";
-import calculatePreciseAge from "../../utils/calculateAge";
-import ageFormatter from "../../utils/ageFormatter";
-import { Specialty } from "../../consts";
+import { StudentType } from '../../types/types';
+import styles from '../Student/Student.module.css';
+import calculatePreciseAge from '../../utils/calculateAge';
+import ageFormatter from '../../utils/ageFormatter';
+import { Specialty } from '../../consts';
 
 type StudentMobileProps = {
   student: StudentType;
@@ -22,7 +22,7 @@ function StudentMobile({ student, onDelete }: StudentMobileProps): JSX.Element {
             <div className={styles.header_information}>
               <div
                 className={[styles.color_mobile, styles[student.color]].join(
-                  " "
+                  ' '
                 )}
               ></div>
               <div className={styles.star}></div>
@@ -31,7 +31,7 @@ function StudentMobile({ student, onDelete }: StudentMobileProps): JSX.Element {
           </div>
         </div>
         <button
-          className={[styles.ellipse, styles.delete_button].join(" ")}
+          className={[styles.ellipse, styles.delete_button].join(' ')}
           onClick={() => onDelete(student.id)}
         ></button>
       </div>

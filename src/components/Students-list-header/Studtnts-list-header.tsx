@@ -1,4 +1,4 @@
-import styles from "./Studtnts-list-header.module.css";
+import styles from './Studtnts-list-header.module.css';
 
 function StudentsListHeader(): JSX.Element {
   return (

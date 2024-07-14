@@ -5,6 +5,13 @@
   box-sizing: border-box;
 }
 
+.loading{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
 .main {
   padding-left: 130px;
   padding-right: 130px;

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 function UseSearchStudents(): [string, (e: React.ChangeEvent<HTMLInputElement>) => void] {
   const [currentQuery, setCurrentQuery] = useState('');

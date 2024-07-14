@@ -17,6 +17,7 @@ function StudentsList({
   sortingType,
   onDelete,
 }: StudentsListProps): JSX.Element {
+  
   return (
     <>
       <table className={styles.list}>

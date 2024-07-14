@@ -1,4 +1,4 @@
-import { Specialty } from "../consts";
+import { Specialty } from '../consts';
 
 export type StudentType = {
     id: number,

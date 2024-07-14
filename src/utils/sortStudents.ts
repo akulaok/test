@@ -1,5 +1,5 @@
-import { SortingTypes, StudentsType } from "../types/types";
-import calculatePreciseAge from "./calculateAge";
+import { SortingTypes, StudentsType } from '../types/types';
+import calculatePreciseAge from './calculateAge';
 
 export const sortStudents = (studentsToSort: StudentsType, type: SortingTypes) => {
   switch (type) {

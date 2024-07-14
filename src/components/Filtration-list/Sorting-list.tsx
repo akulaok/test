@@ -1,6 +1,6 @@
-import { useState } from "react";
-import styles from "./Sorting-list.module.css";
-import { SortTypesArr } from "../../consts";
+import { useState } from 'react';
+import styles from './Sorting-list.module.css';
+import { SortTypesArr } from '../../consts';
 
 export type SortingListProps = {
   sortingType: string;
@@ -28,7 +28,7 @@ function SortingList({
             <li
               className={
                 type === sortingType
-                  ? [styles.list__item, styles.list__item_active].join(" ")
+                  ? [styles.list__item, styles.list__item_active].join(' ')
                   : styles.list__item
               }
               onClick={() => {
