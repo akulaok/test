@@ -1,4 +1,4 @@
-# Doubletapp-test
+# test
 
 Single Page Application для работы со списком 
 студентов.
